@@ -1,0 +1,675 @@
+body {
+  background: #dbdbd5;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  overflow: auto;
+}
+#logo {
+  position: relative;
+  top: -5px;
+}
+
+a {
+  color: #85461e;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #85461e;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: #85461e;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #85461e;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: linear-gradient(45deg, #85461e -132%, #85461e 100%);
+  padding: 10px 0;
+  font-size: 14px;
+  display: block; 
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #eee;
+}
+
+#topbar .contact-info a:hover {
+  color: #000;
+}
+
+#topbar .contact-info i {
+  color: #eee;
+  padding: 10px;
+}
+.contact-info.float-left {
+    color: #eee;
+}
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #eee;
+}
+
+#topbar .social-links a {
+  color: #eee;
+  padding: 10px 15px;
+  display: inline-block;
+  line-height: 1px;
+  border-left: 1px solid #eee;
+  font-size: 22px;
+}
+
+#topbar .social-links a:hover {
+  color: #000;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 0px 0;
+  height: 100px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #ffffff;
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+
+#header #logo img {
+  padding: 0;
+  margin: -10px;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #header {
+    padding: 20px 0;
+    height: 74px;
+  }
+  #header #logo img {
+    max-height: 75px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+#intro .intro-content {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  background: #00000036;
+  right: 0px;
+  text-align: left;
+  top: 0;
+  bottom: 0;
+  background: #261f1566;
+}
+
+#intro .intro-content h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+  background: #0000008c;
+  padding: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+#intro .intro-content h2 span {
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #intro .intro-content h2 {
+    font-size: 22px;
+    padding: 15px;
+  }
+}
+
+#intro .intro-content .btn-get-started, #intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  width: 52%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+#intro .intro-content .btn-get-started {
+  background: #85461e;
+}
+
+#intro .intro-content .btn-get-started:hover {
+  color: #fff;
+  background: #85461e;
+}
+
+#intro #intro-carousel {
+  z-index: 8;
+}
+
+#intro #intro-carousel::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+  opacity: .4;
+}
+
+#intro #intro-carousel .item {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 35px 18px;
+  text-decoration: none;
+  display: inline-block;
+  color: #B87333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #ffffff;
+  background: #85461e;
+}
+
+.nav-menu > li {
+  margin-left: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #555;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: #85461e;
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fffc;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(13, 13, 13, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+/* Services Section
+--------------------------------*/
+#services {
+  padding: 60px 0 0 0;
+}
+
+#services .box {
+  padding: 40px;
+  margin-bottom: 40px;
+  background: #fff;
+  transition: 0.4s;
+  border: 1px solid #dedede;
+}
+
+#services .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+
+#services .box .icon {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+#services .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin: 0;
+}
+
+
+#services .box p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 15px;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+  #services .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #services .box h4, #services .box p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header {
+  margin-bottom: 0px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.section-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 62px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-top: #FF9800 solid 2px;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-header p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* About Section
+--------------------------------*/
+#about {
+  padding: 60px 0 60px 0;
+}
+
+#about .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #about .about-img img {
+    width: 100%; /* Resmi cihaz boyutuna gÃ¶re optimize eder */
+    height: auto; /* YÃ¼ksekliÄŸi otomatik olarak ayarlar */
+    object-fit: contain; /* Resmin taÅŸmasÄ±nÄ± Ã¶nler */
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+
+#about .content h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+/* Clients Section
+--------------------------------*/
+#clients {
+  padding: 130px;
+}
+
+#clients img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+#clients .owl-nav, #clients .owl-dots {
+  text-align: center;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #clients {
+    padding: 30px;
+  }
+
+  #clients img {
+    opacity: 1;
+    transition: none;
+  }
+
+  #clients .owl-nav, #clients .owl-dots {
+    text-align: center;
+  }
+}
+
+
+/* Contact Section
+--------------------------------*/
+#contact {
+  padding-top: 20px;
+}
+
+#contact .contact-info {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+#contact .contact-info i {
+  font-size: 26px;
+  display: inline-block;
+  margin-bottom: 0;
+  background: #85461e;
+  width: 36px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contact .contact-info address, #contact .contact-info p {
+  margin-bottom: 0;
+  color: #000;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+
+#contact .contact-info h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+  float: left;
+  margin: 0 0 0 15px;
+}
+
+#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 45px !important;
+  float: left;
+}
+
+@media (max-width: 576px), (min-width: 768px) and (max-width: 992px) {
+  #contact .contact-info i {
+    float: none;
+    text-align: center; /* Ä°konlarÄ±n ortada gÃ¶rÃ¼nmesini saÄŸlar */
+    position: static;
+    margin-bottom: 10px; /* Ä°konlar ile metin arasÄ±na mesafe ekler */
+    margin-top: 10px;
+  }
+
+  #contact .contact-info address,
+  #contact .contact-info p,
+  #contact .contact-info h3 {
+    text-align: center; /* Metnin ortada gÃ¶rÃ¼nmesini saÄŸlar */
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px; /* Metinler arasÄ±na mesafe ekler */
+  }
+
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding-left: 0 !important;
+    float: none;
+    text-align: center; /* Adres, telefon ve e-posta bilgilerinin ortada gÃ¶rÃ¼nmesini saÄŸlar */
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #302d28;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #ffffffad;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+}
