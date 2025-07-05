@@ -1,178 +1,89 @@
-# ---
 
-# 
+# ZeoksGıda Static Website
 
-# \## 📌 Overview
+---
 
-# 
+## 📌 Overview
 
-# This project demonstrates a clean, static website layout for \*\*ZeoksGıda\*\*, a food company. It includes essential sections like homepage, about, products, and contact—all built using basic web technologies.
+Bu proje, **ZeoksGıda** adlı bir gıda şirketi için temiz ve statik bir web sitesi şablonu sunmaktadır.  
+Anasayfa, hakkında, ürünler ve iletişim gibi temel bölümler içerir ve sadece temel web teknolojileri kullanılarak geliştirilmiştir.
 
-# 
+**Öne çıkan özellikler:**
 
-# Key highlights include:
+- Responsive (mobil uyumlu) tasarım  
+- Semantik ve temiz HTML yapısı  
+- Tamamen özel CSS ile stillendirilmiş  
+- Herhangi bir gıda markası için kolayca özelleştirilebilir  
 
-# 
+---
 
-# \- Responsive design compatible with various screen sizes
+## 🧰 Gereksinimler
 
-# \- Clean and semantic HTML structure
+- Sadece bir web tarayıcısı gerekir.  
+- Backend ya da ek bir araç gerekmez.  
 
-# \- Styled entirely with custom CSS
+---
 
-# \- Easily customizable for any food-based brand
+## 🔧 Kurulum ve Çalıştırma
 
-# 
+1. **Depoyu klonlayın:**
 
-# ---
+```bash
+git clone https://github.com/batuhanisiklar/example-website.git
+cd example-website
+```
 
-# 
+2. **Web sitesini açın:**
 
-# \## 🧰 Requirements
+```bash
+start index.html    # Windows
+open index.html     # macOS
+xdg-open index.html # Linux
+```
 
-# 
+---
 
-# You just need a web browser.\\
+## 📁 Proje Yapısı
 
-# No backend or additional tools are required.
+```
+example-website/
+│
+├── index.html       # Anasayfa HTML dosyası
+├── style.css        # Ana stil dosyası
+├── images/          # Marka ve ürün görselleri klasörü
+└── README.md        # Proje dokümantasyonu
+```
 
-# 
+---
 
-# ---
+## ✨ Özellikler
 
-# 
+- ✅ Bağımlılıksız statik site  
+- ✅ Sadece HTML ve CSS  
+- ✅ Mobil cihazlarla uyumlu tasarım  
+- ✅ Yeni başlayanlar için temiz ve anlaşılır kod  
 
-# \## 🔧 Installation \& Setup
+---
 
-# 
+## 👨‍💼 Katkıda Bulunma
 
-# 1\. \*\*Clone the repository\*\*:
+Bu şablonu kendi küçük işiniz veya portföyünüz için özgürce fork edip özelleştirebilirsiniz.
 
-# 
+---
 
-# ```bash
+## 📄 Lisans
 
-# git clone https://github.com/batuhanisiklar/example-website.git
+Bu proje **MIT Lisansı** ile lisanslanmıştır.
 
-# cd example-website
+---
 
-# ```
+## 📬 İletişim
 
-# 
+| Platform    | İletişim Bilgisi            | Link                                                       |
+| ----------- | --------------------------- | ---------------------------------------------------------- |
+| 📧 Email    | batuhanisiklar0@gmail.com   | [E-posta Gönder](mailto:batuhanisiklar0@gmail.com)         |
+| 💼 LinkedIn | Batuhan Işıklar             | [LinkedIn Profilim](https://www.linkedin.com/in/batuhanisiklar/) |
 
-# 2\. \*\*Open the website\*\*:
+---
 
-# 
-
-# Just open the `index.html` file in your browser:
-
-# 
-
-# ```bash
-
-# start index.html    # On Windows
-
-# open index.html     # On macOS
-
-# xdg-open index.html # On Linux
-
-# ```
-
-# 
-
-# ---
-
-# 
-
-# \## 📁 Project Structure
-
-# 
-
-# ```
-
-# example-website/
-
-# |
-
-# ├── index.html              # Homepage HTML
-
-# ├── style.css               # Main stylesheet
-
-# ├── images/                 # Folder containing brand/product images
-
-# └── README.md               # Project documentation
-
-# ```
-
-# 
-
-# ---
-
-# 
-
-# \## ✨ Features
-
-# 
-
-# \- ✅ Static site without dependencies
-
-# \- ✅ Pure HTML and CSS
-
-# \- ✅ Mobile-friendly layout
-
-# \- ✅ Clear code structure for beginners
-
-# 
-
-# ---
-
-# 
-
-# \## 👨‍💼 Contributing
-
-# 
-
-# Feel free to fork and customize this website template for your own small business or portfolio.
-
-# 
-
-# ---
-
-# 
-
-# \## 📄 License
-
-# 
-
-# This project is licensed under the \*\*MIT License\*\*.
-
-# 
-
-# ---
-
-# 
-
-# \## 📬 Contact
-
-# 
-
-# | Platform    | Username / Email            | Link                                                    |
-
-# | ----------- | --------------------------- | ------------------------------------------------------- |
-
-# | 📧 Email    | `batuhanisiklar0@gmail.com` | \[Send Email](mailto\\:batuhanisiklar0@gmail.com)         |
-
-# | 💼 LinkedIn | `Batuhan Işıklar`           | \[LinkedIn](https://www.linkedin.com/in/batuhanisiklar/) |
-
-# 
-
-# ---
-
-# 
-
-# > Made with ❤️ for ZeoksGıda by Batuhan Işıklar
-
-# 
-
-
-
+> Made with ❤️ for ZeoksGıda by Batuhan Işıklar
